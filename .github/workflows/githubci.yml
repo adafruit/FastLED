@@ -9,7 +9,7 @@ jobs:
       matrix:
         # these are defined in this fine https://github.com/adafruit/ci-arduino/blob/master/build_platform.py#L34
         # under "ALL_PLATFORMS", also make sure that "BSP_URLS" also contains the board support info!
-        arduino-platform: ["uno", "leonardo", "mega2560", "zero"]
+        arduino-platform: ["uno", "leonardo", "mega2560", "zero", "esp8266", "esp32", "nrf52832", "nrf52840", "microbit"]
 
     runs-on: ubuntu-latest
     
