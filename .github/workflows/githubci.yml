@@ -29,7 +29,7 @@ jobs:
     # manually install OctoWS2811
     - name: extra libraries
       run: |
-        git clone --quiethttps://github.com/PaulStoffregen/OctoWS2811.git /home/runner/Arduino/libraries/OctoWS2811
+        git clone --quiet https://github.com/PaulStoffregen/OctoWS2811.git /home/runner/Arduino/libraries/OctoWS2811
 
     - name: test platforms
       run: python3 ci/build_platform.py ${{ matrix.arduino-platform }}
